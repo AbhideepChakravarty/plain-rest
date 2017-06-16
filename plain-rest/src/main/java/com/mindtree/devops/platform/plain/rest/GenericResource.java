@@ -48,6 +48,7 @@ public class GenericResource {
      */
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
     public String putXml(String content) {
         System.out.println("OUt put --- " + content);
         
