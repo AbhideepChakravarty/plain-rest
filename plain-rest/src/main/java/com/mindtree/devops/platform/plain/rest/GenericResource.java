@@ -45,13 +45,16 @@ public class GenericResource {
     /**
      * PUT method for updating or creating an instance of GenericResource
      * @param content representation for the resource
+     * @return 
      */
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public String putXml(String content) {
+    public Response putXml(String content) {
         System.out.println("OUt put --- " + content);
-        
-        return "You think its so easy to get the weather information?!";
+        Response response = new Response();
+        response.setSpeech("You think its so easy to get the weather information?!");
+        response.setDisplayText("You think its so easy to get the weather information?!");
+        return response;
     }
 }
