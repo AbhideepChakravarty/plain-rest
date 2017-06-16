@@ -48,7 +48,9 @@ public class GenericResource {
      */
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
-    public void putXml(String content) {
+    public String putXml(String content) {
         System.out.println("OUt put --- " + content);
+        
+        return "You think its so easy to get the weather information?!";
     }
 }
