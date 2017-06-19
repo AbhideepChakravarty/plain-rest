@@ -54,7 +54,7 @@ public class GenericResource {
         System.out.println("OUt put --- " + content);
         Response response = new Response();
         response.setSpeech("You think its so easy to get the weather information?!");
-        response.setDisplayText("You think its so easy to get the weather information?!");
+        response.setDisplayText("I wont show you the info.");
         return response;
     }
 }
